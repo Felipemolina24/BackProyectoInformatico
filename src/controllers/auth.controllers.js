@@ -106,3 +106,8 @@ export const profile = async (req, res) => {
     })
     
 }
+
+export const prueba = (req, res) => {
+    res.send("Hola")
+    console.log("prueba");
+}
