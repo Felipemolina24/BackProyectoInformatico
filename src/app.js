@@ -8,7 +8,7 @@ import http from 'http'
 
 const app = express() // instanciando express
 const server = http.createServer(app)
-const io = new SocketServer(server, { cors: { origin: 'http://localhost:3000' } })
+const io = new SocketServer(server, { cors: { origin: '*' } })
 
 
 app.use(cors()) // habilitando cors
